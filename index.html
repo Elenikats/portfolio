@@ -15,7 +15,7 @@
 <body>
     <a name="top"></a>
     <header>
-        <nav>
+        <nav class="big-nav">
             <ul>
                 <li class="logo"> <a href="./index.html"></a> </li>
                 <li> <a href="#about"> About </a> </li>
@@ -24,12 +24,29 @@
             </ul>
         </nav>
 
+        <div class="hamburger-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div class="line"></div>
+            </div>
+            <div class="menu">
+                    <div>
+                        <ul>
+                            <li> <a href="#about"> About </a> </li>
+                            <li> <a href="#projects"> Projects </a> </li>
+                            <li> <a href="#contact"> Contact </a></li>
+                        </ul>
+                  </div>
+            </div>
+         </div>
+
+
     </header>
 
     <main>
 
         <div class="video-container">
-            <video autoplay muted loop id="video" src="./assets/ti3zNPT.mp4"> </video>
+            <video autoplay muted id="video" src="./assets/ti3zNPT.mp4"> </video>
 
             <!-- loop -->
 
@@ -51,8 +68,14 @@
                 <div class="image"></div>
 
                 <div class="description">
-                    <p>Hi,
-                        I am a front end developer with full stack experience based in Berlin, Germany. </p>
+                    <p> Hi,</p>
+                    <p> I am a front end developer with full stack experience based in Berlin, Germany. </p>
+                    <p> Originally from Greece, I came to Berlin to pursue my career as a dance teacher but ended up
+                        falling in love with coding during the quarantine time. </p>
+                    <p>At the moment, I study at DCI in order to acquire all the skills to become a mern stack
+                        developer.</p>
+                    <p>In my free time, when I am not taking care of my big houseplant family, I like to expand my
+                        skillset by watching tutorials and building new projects. </p>
                 </div>
             </div>
         </section>

@@ -18,6 +18,10 @@ body {
   font-family: 'Lato', sans-serif, 'Font Awesome 5 Free';
 }
 
+.hamburger-wrap {
+  opacity: 0;
+}
+
 header {
   width: 100%;
   position: -webkit-sticky;
@@ -233,11 +237,12 @@ header a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 4rem;
 }
 
-.about-container .about .description {
-  padding: 4rem;
+.about-container .about .description p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1.4rem;
 }
 
 .projects-container {
@@ -469,7 +474,8 @@ header a {
   padding: .5rem;
 }
 
-.contact-section .contact-form input[type="email"], .contact-section .contact-form #textarea, .contact-section .contact-form input[type="name"] {
+.contact-section .contact-form input[type="email"], .contact-section .contact-form #textarea,
+.contact-section .contact-form input[type="name"] {
   background-color: white;
   width: 100%;
   border-bottom: 1px solid white;
@@ -566,6 +572,29 @@ footer h3 {
 }
 
 @media screen and (max-width: 1200px) {
+  .video-container #video {
+    max-width: 100%;
+    min-height: 100%;
+  }
+  .video-container .headings {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 7px;
+  }
+  .video-container .headings h1 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .video-container .headings h2 {
+    font-size: 2.2rem;
+    padding-top: 1.2rem;
+  }
   .about-container .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -580,6 +609,7 @@ footer h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 4rem;
   }
   .projects-container .projects {
     -ms-grid-rows: (1fr)[3];
@@ -680,6 +710,215 @@ footer h3 {
 }
 
 @media screen and (max-width: 768px) {
+  .big-nav {
+    opacity: 0;
+  }
+  .hamburger-wrap {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+    margin: 2rem;
+  }
+  .hamburger-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    opacity: 0;
+  }
+  .hamburger-wrap .toggler:checked + .hamburger > div {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .hamburger-wrap .toggler:checked:hover + .hamburger > div {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  .hamburger-wrap .toggler:checked + .hamburger > div:before,
+  .hamburger-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .hamburger-wrap .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1rem;
+    width: 60px;
+    height: 60px;
+    background-color: #71dde0;
+  }
+  .hamburger-wrap .hamburger .line {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .hamburger-wrap .hamburger .line::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .hamburger-wrap .hamburger .line::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .hamburger-wrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hamburger-wrap .menu div {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .hamburger-wrap .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 3rem;
+  }
+  .hamburger-wrap .menu ul li:nth-child(1),
+  .hamburger-wrap .menu ul li:nth-child(2),
+  .hamburger-wrap .menu ul li:nth-child(3) {
+    margin: 0;
+    padding: 1rem;
+  }
+  .hamburger-wrap .menu ul li:nth-child(1)::after,
+  .hamburger-wrap .menu ul li:nth-child(2)::after,
+  .hamburger-wrap .menu ul li:nth-child(3)::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-color: #71dde0;
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+  }
+  .hamburger-wrap .menu ul li:nth-child(1):hover::after,
+  .hamburger-wrap .menu ul li:nth-child(2):hover::after,
+  .hamburger-wrap .menu ul li:nth-child(3):hover::after {
+    width: 100%;
+  }
+  .hamburger-wrap .menu ul li:nth-child(1) a,
+  .hamburger-wrap .menu ul li:nth-child(2) a,
+  .hamburger-wrap .menu ul li:nth-child(3) a {
+    -webkit-transition: all 0.4 ease;
+    transition: all 0.4 ease;
+  }
+  .hamburger-wrap .toggler:checked ~ .menu {
+    opacity: 1;
+  }
+  .hamburger-wrap .toggler:checked ~ .menu div {
+    opacity: 1;
+  }
+  .hamburger-wrap .logo {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .video-container #video {
+    max-width: 100%;
+    min-height: 100%;
+  }
+  .video-container .headings {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 7px;
+  }
+  .video-container .headings h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .video-container .headings h2 {
+    font-size: 1rem;
+    padding-top: 1.2rem;
+  }
   .projects-container .projects {
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
@@ -779,6 +1018,29 @@ footer h3 {
 }
 
 @media screen and (max-width: 480px) {
+  .video-container #video {
+    max-width: 100%;
+    min-height: 100%;
+  }
+  .video-container .headings {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 7px;
+  }
+  .video-container .headings h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .video-container .headings h2 {
+    font-size: 1rem;
+    padding-top: 1.2rem;
+  }
   .skills {
     -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
