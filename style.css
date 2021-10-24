@@ -149,7 +149,7 @@ header a {
   padding-top: 1.2rem;
 }
 
-.video-container button {
+.video-container .button-1 {
   font-size: 1rem;
   background-color: white;
   text-transform: uppercase;
@@ -159,7 +159,7 @@ header a {
   color: #71dde0;
 }
 
-.video-container button:hover {
+.video-container .button-1:hover {
   -webkit-animation-name: buttonHover;
           animation-name: buttonHover;
   -webkit-animation-duration: .5s;
@@ -288,15 +288,61 @@ header a {
 }
 
 .projects-container .projects .project-1 {
+  background-image: url(./assets/jewelry.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects-container .projects .project-1 .hover-1 {
+  background-color: rgba(140, 99, 207, 0.349);
+  opacity: 0;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects-container .projects .project-1 .hover-1:hover {
+  opacity: 1;
 }
 
 .projects-container .projects .project-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(./assets/chessboard-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -305,7 +351,37 @@ header a {
   grid-column: 3/4;
 }
 
+.projects-container .projects .project-2 .hover-1 {
+  background-color: rgba(140, 99, 207, 0.349);
+  height: 100%;
+  opacity: 0;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects-container .projects .project-2 .hover-1:hover {
+  opacity: 1;
+}
+
 .projects-container .projects .project-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(./assets/berlin-blog.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -314,7 +390,37 @@ header a {
   grid-column: 4/5;
 }
 
+.projects-container .projects .project-3 .hover-1 {
+  background-color: rgba(140, 99, 207, 0.349);
+  height: 100%;
+  opacity: 0;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects-container .projects .project-3 .hover-1:hover {
+  opacity: 1;
+}
+
 .projects-container .projects .project-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(./assets/plant.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -323,7 +429,37 @@ header a {
   grid-column: 2/3;
 }
 
+.projects-container .projects .project-4 .hover-1 {
+  background-color: rgba(140, 99, 207, 0.349);
+  height: 100%;
+  opacity: 0;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects-container .projects .project-4 .hover-1:hover {
+  opacity: 1;
+}
+
 .projects-container .projects .project-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(./assets/travelagency.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -332,13 +468,56 @@ header a {
   grid-column: 3/4;
 }
 
+.projects-container .projects .project-5 .hover-1 {
+  background-color: rgba(140, 99, 207, 0.349);
+  height: 100%;
+  opacity: 0;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects-container .projects .project-5 .hover-1:hover {
+  opacity: 1;
+}
+
 .projects-container .projects .project-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(./assets/ableton.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
+}
+
+.projects-container .projects .project-6 .hover-1 {
+  background-color: rgba(140, 99, 207, 0.349);
+  height: 100%;
+  opacity: 0;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects-container .projects .project-6 .hover-1:hover {
+  opacity: 1;
 }
 
 .projects-container .projects div {
@@ -353,14 +532,31 @@ header a {
 
 .projects-container .projects div h2 {
   font-size: 1.5rem;
-  padding-bottom: 1rem;
+  padding: .7rem;
   text-align: center;
-  color: #979595;
+  color: white;
+  background-color: rgba(140, 99, 207, 0.349);
 }
 
-.projects-container .projects div p {
-  text-align: center;
-  font-size: 1.1rem;
+.projects-container .projects div .button-2 {
+  padding: .5rem;
+  font-size: .8rem;
+  background-color: white;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  margin: 1.5rem .3rem;
+  color: #71dde0;
+}
+
+.projects-container .projects div .button-2:hover {
+  -webkit-animation-name: buttonHover;
+          animation-name: buttonHover;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+  cursor: pointer;
 }
 
 .skills-container {
@@ -588,7 +784,7 @@ footer h3 {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 35%;
+    top: 38%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -786,6 +982,7 @@ footer h3 {
     width: 50px;
     height: 50px;
     background-color: #71dde0;
+    border-radius: 5px;
   }
   .hamburger-wrap .hamburger .line {
     position: relative;
@@ -913,7 +1110,7 @@ footer h3 {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1042,7 +1239,7 @@ footer h3 {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 27%;
+    top: 25%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
