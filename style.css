@@ -19,7 +19,7 @@ body {
 }
 
 .hamburger-wrap {
-  opacity: 0;
+  display: none;
 }
 
 header {
@@ -259,6 +259,7 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   margin-bottom: 5rem;
 }
 
@@ -580,7 +581,7 @@ footer h3 {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -711,18 +712,17 @@ footer h3 {
 
 @media screen and (max-width: 768px) {
   .big-nav {
-    opacity: 0;
+    display: none;
   }
   .hamburger-wrap {
-    opacity: 1;
-    position: fixed;
+    display: block;
+    position: absolute;
     top: 0;
     right: 0;
     cursor: pointer;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    z-index: 1;
-    margin: 2rem;
+    margin: 0.5rem;
   }
   .hamburger-wrap .toggler {
     position: absolute;
@@ -765,10 +765,9 @@ footer h3 {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
     padding: 1rem;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: #71dde0;
   }
   .hamburger-wrap .hamburger .line {
@@ -801,7 +800,6 @@ footer h3 {
     height: 3px;
     background-color: white;
     border-radius: 5px;
-    z-index: 1;
   }
   .hamburger-wrap .hamburger .line::after {
     content: '';
@@ -811,15 +809,16 @@ footer h3 {
     height: 3px;
     background-color: white;
     border-radius: 5px;
-    z-index: 1;
   }
   .hamburger-wrap .menu {
+    background-color: rgba(91, 145, 216, 0.623);
     position: fixed;
     top: 0;
     right: 0;
     width: 30%;
     height: 100%;
     opacity: 0;
+    z-index: -1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -889,13 +888,6 @@ footer h3 {
   .hamburger-wrap .toggler:checked ~ .menu div {
     opacity: 1;
   }
-  .hamburger-wrap .logo {
-    display: block;
-    opacity: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
   .video-container #video {
     max-width: 100%;
     min-height: 100%;
@@ -904,7 +896,7 @@ footer h3 {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -912,12 +904,20 @@ footer h3 {
     letter-spacing: 7px;
   }
   .video-container .headings h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 500;
   }
   .video-container .headings h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-top: 1.2rem;
+  }
+  .video-container button {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  .about-heading, .skills-heading, .projects-heading {
+    padding: 2rem;
+    margin: 0;
   }
   .projects-container .projects {
     -ms-grid-rows: (1fr)[6];
@@ -1039,7 +1039,11 @@ footer h3 {
   }
   .video-container .headings h2 {
     font-size: 1rem;
-    padding-top: 1.2rem;
+    padding-top: .2rem;
+  }
+  .video-container button {
+    margin-top: .3rem;
+    padding: 0.8rem;
   }
   .skills {
     -ms-grid-rows: (1fr)[4];
@@ -1080,7 +1084,7 @@ footer h3 {
     grid-column: 1/2;
   }
   .contact-section {
-    width: 95%;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

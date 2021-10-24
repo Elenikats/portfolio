@@ -33,7 +33,7 @@ body {
 /////////////////////////// HEADER ///////////////////////////////
 
 .hamburger-wrap {
-    opacity: 0;
+    display: none;
 }
 
 header {
@@ -238,6 +238,7 @@ header {
 
 .projects-container {
     @include flexCenter(column);
+    text-align: center;
     margin-bottom: 5rem;
 
     .projects-heading {
@@ -534,7 +535,7 @@ footer {
             color: $headingLight;
             text-transform: uppercase;
             position: absolute;
-            top: 35%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
@@ -640,18 +641,18 @@ footer {
     ///////////// Hamburger button 
 
     .big-nav {
-        opacity: 0;
+        display: none;
     }
 
     .hamburger-wrap {
-        opacity: 1;
-        position: fixed;
+        display: block;
+        position: absolute;
         top: 0;
         right: 0;
         cursor: pointer;
         transition: all .5s ease-in-out;
-        z-index: 1;
-        margin: 2rem;
+        margin: 0.5rem;
+
 
         .toggler {
             position: absolute;
@@ -690,10 +691,9 @@ footer {
             position: absolute;
             top: 0;
             right: 0;
-            z-index: 1;
             padding: 1rem;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background-color: $button;
 
             // the middle line of the burger
@@ -715,7 +715,6 @@ footer {
                     height: 3px;
                     background-color: white;
                     border-radius: 5px;
-                    z-index: 1;
                     // transition: all .5s ease-in-out;
                     // transform: translateY(-10px);
                 }
@@ -728,19 +727,20 @@ footer {
                     height: 3px;
                     background-color: white;
                     border-radius: 5px;
-                    z-index: 1;
                     // transition: all .5s ease-in-out;
                 }
             }
         }
 
         .menu {
+            background-color: rgba(91, 145, 216, 0.623);                              
             position: fixed;
             top: 0;
             right: 0;
-            width: 30%;
+            width:30%;
             height: 100%;
             opacity: 0;
+            z-index: -1;
             @include flexCenter(column);
 
             div {
@@ -793,13 +793,6 @@ footer {
                 }
             }
 
-            .logo {
-                display: block;
-                opacity: 1;
-                position: fixed;
-                top: 0;
-                left: 0;
-            }
         }
 
 
@@ -815,23 +808,35 @@ footer {
                 color: $headingLight;
                 text-transform: uppercase;
                 position: absolute;
-                top: 35%;
+                top: 25%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-align: center;
                 letter-spacing: 7px;
 
                 h1 {
-                    font-size: 2rem;
+                    font-size: 2.3rem;
                     font-weight: 500;
                 }
 
                 h2 {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     padding-top: 1.2rem;
 
                 }
             }
+
+            button {
+                padding: 0.7rem;
+                font-size: 1rem;
+            }
+        }
+
+     // about heading 
+
+         .about-heading, .skills-heading, .projects-heading {
+            padding: 2rem;
+            margin: 0;
         }
 
         // PROJECTS
@@ -908,6 +913,8 @@ footer {
 
     @media screen and (max-width:480px) {
 
+        // hamburger menu
+
         // //VIDEO 
 
         .video-container {
@@ -920,7 +927,7 @@ footer {
                 color: $headingLight;
                 text-transform: uppercase;
                 position: absolute;
-                top: 25%;
+                top:25%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-align: center;
@@ -933,11 +940,18 @@ footer {
 
                 h2 {
                     font-size: 1rem;
-                    padding-top: 1.2rem;
+                    padding-top: .2rem;
 
                 }
             }
+
+            button {
+                margin-top: .3rem;
+                padding: 0.8rem;
+            }
         }
+
+        // about heading 
 
 
         // Skills section
@@ -970,7 +984,7 @@ footer {
         // CONTACT
 
         .contact-section {
-            width: 95%;
+            width: 90%;
         }
 
 
