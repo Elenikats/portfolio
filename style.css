@@ -588,7 +588,7 @@ footer h3 {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -913,7 +913,7 @@ footer h3 {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1101,9 +1101,6 @@ footer h3 {
   }
   .contact-section {
     width: 90%;
-  }
-  .about-container, .projects-container, .skils-container {
-    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
