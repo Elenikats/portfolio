@@ -56,10 +56,11 @@ header {
             font-family: 'VT323', monospace;
             font-size: 3rem;
             color: $headingLight;
+            transition: all .5s ease-in-out;
         }
 
         &:hover::after {
-            color: $hoverColor;
+            color: $button;
             cursor: pointer;
         }
     }
@@ -73,20 +74,18 @@ header {
         margin-left: auto;
         padding-right: 4rem;
 
-        a {
-            &::after {
-                content: '';
-                display: block;
-                height: 4px;
-                width: 0%;
-                background-color: $button;
-                transition: all ease-in-out 250ms;
-            }
+        &::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 0%;
+            background-color: $button;
+            transition: all ease-in-out 250ms;
+        }
 
-            &:hover::after {
-                width: 100%;
+        &:hover::after {
+            width: 100%;
 
-            }
         }
     }
 
@@ -217,7 +216,7 @@ header {
 
         .image {
             width: 100%;
-            height: 50vh;
+            height: 60vh;
             background-image: url(./assets/about.jpeg);
             background-size: contain;
             background-repeat: no-repeat;
@@ -225,7 +224,9 @@ header {
         }
 
         .description {
+            margin-top: 1rem;
             p {
+                color: $headingLight;
                 font-size: 1.2rem;
                 margin: 1rem 0;
                 line-height: 1.4rem
@@ -523,6 +524,7 @@ footer {
 
 @media screen and (max-width:1200px) {
 
+
     // video
 
     .video-container {
@@ -638,10 +640,21 @@ footer {
 
 @media screen and (max-width:768px) {
 
+
     ///////////// Hamburger button 
 
-    .big-nav {
+    .big-nav li:nth-child(2), .big-nav li:nth-child(3), .big-nav li:nth-child(4) {
         display: none;
+    }
+
+    .logo::after {
+        font-size: .2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        margin: 0.5rem;
     }
 
     .hamburger-wrap {
@@ -737,7 +750,7 @@ footer {
             position: fixed;
             top: 0;
             right: 0;
-            width:30%;
+            width: 40%;
             height: 100%;
             opacity: 0;
             z-index: -1;
@@ -834,11 +847,6 @@ footer {
 
      // about heading 
 
-         .about-heading, .skills-heading, .projects-heading {
-            padding: 2rem;
-            margin: 0;
-        }
-
         // PROJECTS
 
         .projects-container .projects {
@@ -915,6 +923,10 @@ footer {
 
         // hamburger menu
 
+        .menu {
+            width: 50%;
+        }
+
         // //VIDEO 
 
         .video-container {
@@ -985,6 +997,12 @@ footer {
 
         .contact-section {
             width: 90%;
+        }
+
+        // HEADINGS 
+
+        .about-container, .projects-container ,.skils-container {
+            margin-bottom: 1rem;
         }
 
 
