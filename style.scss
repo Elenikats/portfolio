@@ -680,6 +680,9 @@ footer {
         .project-1 {
             grid-row: 1/2;
             grid-column: 2/3;
+            .hover-1 {
+                opacity: 1;
+            }
         }
 
         .project-2 {
@@ -1071,7 +1074,43 @@ footer {
             }
         }
 
-        // about heading 
+        // projects heading 
+
+        .project-1 {
+            .hover-1 {
+                opacity: 1;
+            }
+        }
+
+        .project-2 {
+            .hover-2 {
+                opacity: 1;
+            }
+        }
+
+        .project-3 {
+            .hover-3 {
+                opacity: 1;
+            }
+        }
+
+        .project-4 {
+            .hover-4 {
+                opacity: 1;
+            }
+        }
+
+        .project-5 {
+            .hover-5 {
+                opacity: 1;
+            }
+        }
+
+        .project-6 {
+            .hover-6 {
+                opacity: 1;
+            }
+        }
 
 
         // Skills section
