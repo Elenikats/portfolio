@@ -235,14 +235,14 @@ header a {
 .about-container .about .image {
   width: 100%;
   height: 60vh;
-  background-image: url(./assets/about.jpeg);
+  background-image: url(./assets/Portrait-mini.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .about-container .about .description {
-  margin-top: 1rem;
+  margin: 1rem 3rem;
 }
 
 .about-container .about .description p {
@@ -280,8 +280,8 @@ header a {
 .projects-container .projects {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
@@ -339,7 +339,7 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(./assets/chessboard-2.png);
+  background-image: url(./assets/greenthumb.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -378,7 +378,7 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(./assets/berlin-blog.jpg);
+  background-image: url(./assets/ableton.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -400,123 +400,6 @@ header a {
 }
 
 .projects-container .projects .project-3 .hover-1:hover {
-  opacity: 1;
-}
-
-.projects-container .projects .project-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url(./assets/plant.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.projects-container .projects .project-4 .hover-1 {
-  background-color: rgba(140, 99, 207, 0.349);
-  height: 100%;
-  opacity: 0;
-  color: white;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.projects-container .projects .project-4 .hover-1:hover {
-  opacity: 1;
-}
-
-.projects-container .projects .project-5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url(./assets/travelagency.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-}
-
-.projects-container .projects .project-5 .hover-1 {
-  background-color: rgba(140, 99, 207, 0.349);
-  height: 100%;
-  opacity: 0;
-  color: white;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.projects-container .projects .project-5 .hover-1:hover {
-  opacity: 1;
-}
-
-.projects-container .projects .project-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url(./assets/ableton.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
-}
-
-.projects-container .projects .project-6 .hover-1 {
-  background-color: rgba(140, 99, 207, 0.349);
-  height: 100%;
-  opacity: 0;
-  color: white;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.projects-container .projects .project-6 .hover-1:hover {
   opacity: 1;
 }
 
@@ -652,96 +535,10 @@ header a {
   color: white;
 }
 
-.contact-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  padding: 5rem 0;
-  display: block;
-  width: 35%;
-  margin: 0 auto;
-}
-
-.contact-section .contact-form h1 {
-  border-bottom: 1px solid white;
-  padding: .5rem;
-}
-
-.contact-section .contact-form input[type="email"], .contact-section .contact-form #textarea,
-.contact-section .contact-form input[type="name"] {
-  background-color: white;
-  width: 100%;
-  border-bottom: 1px solid white;
-  color: black;
-  padding: .7rem;
-  margin: .3rem;
-}
-
-.contact-section .contact-form #textarea {
-  padding: 2rem;
-}
-
-.contact-section .contact-form input[type="submit"] {
-  padding: .6rem 1rem;
-  border-radius: 5px;
-  color: #71dde0;
-  border: 1px solid white;
-  font-weight: bold;
-  display: block;
-  margin: 1rem auto;
-  cursor: pointer;
-}
-
-.contact-section .contact-form input[type="submit"]:hover {
-  background-color: white;
-}
-
-.contact-section .contact-form input:focus {
-  outline: #71dde0 2px solid;
-}
-
-.contact-section .contact-form input::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #bbbbbb;
-  font-family: Arial, 'Font Awesome 5 Free';
-}
-
-.contact-section .contact-form input:-ms-input-placeholder {
-  font-weight: bold;
-  color: #bbbbbb;
-  font-family: Arial, 'Font Awesome 5 Free';
-}
-
-.contact-section .contact-form input::-ms-input-placeholder {
-  font-weight: bold;
-  color: #bbbbbb;
-  font-family: Arial, 'Font Awesome 5 Free';
-}
-
-.contact-section .contact-form input::placeholder {
-  font-weight: bold;
-  color: #bbbbbb;
-  font-family: Arial, 'Font Awesome 5 Free';
-}
-
-.contact-section .contact-form textarea:focus {
-  outline: #71dde0 2px solid;
-}
-
 footer {
   padding: 1rem;
   line-height: 2rem;
+  margin-top: 4rem;
 }
 
 footer .social-media {
@@ -813,7 +610,7 @@ footer h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 4rem;
+    padding: 1rem;
   }
   .projects-container .projects {
     -ms-grid-rows: (1fr)[3];
@@ -830,6 +627,9 @@ footer h3 {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  .projects-container .projects .project-1 .hover-1 {
+    opacity: 1;
+  }
   .projects-container .projects .project-2 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -845,30 +645,6 @@ footer h3 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-  }
-  .projects-container .projects .project-4 {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-  }
-  .projects-container .projects .project-5 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
-  .projects-container .projects .project-6 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
   }
   .skills {
     -ms-grid-rows: (1fr)[2];
@@ -1130,8 +906,9 @@ footer h3 {
     font-size: 1rem;
   }
   .projects-container .projects {
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    margin: 3rem;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     gap: 2rem;
@@ -1257,6 +1034,24 @@ footer h3 {
   .video-container button {
     margin-top: .3rem;
     padding: 0.8rem;
+  }
+  .project-1 .hover-1 {
+    opacity: 1;
+  }
+  .project-2 .hover-2 {
+    opacity: 1;
+  }
+  .project-3 .hover-3 {
+    opacity: 1;
+  }
+  .project-4 .hover-4 {
+    opacity: 1;
+  }
+  .project-5 .hover-5 {
+    opacity: 1;
+  }
+  .project-6 .hover-6 {
+    opacity: 1;
   }
   .skills {
     -ms-grid-rows: (1fr)[4];
